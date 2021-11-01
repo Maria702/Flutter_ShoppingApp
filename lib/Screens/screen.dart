@@ -34,7 +34,7 @@ class _ScreenState extends State<Screen> {
                       children: [
                         Container(
                           child: Padding(
-                            padding: const EdgeInsets.only(top: 20),
+                            padding: const EdgeInsets.only(top: 10),
                             child: Center(
                                 child: Text(
                               "***Welcome!***",
@@ -93,11 +93,11 @@ class _ScreenState extends State<Screen> {
                               padding: EdgeInsets.symmetric(
                                   horizontal: 50, vertical: 20),
                               textStyle: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold)),
+                                  fontSize: 10, fontWeight: FontWeight.bold)),
                           child: Text(
                             "Login",
                             style: new TextStyle(
-                              fontSize: 20.0,
+                              fontSize: 10.0,
                               fontWeight: FontWeight.bold,
                               color: Colors.cyan,
                               shadows: [
@@ -141,11 +141,11 @@ class _ScreenState extends State<Screen> {
                               padding: EdgeInsets.symmetric(
                                   horizontal: 50, vertical: 20),
                               textStyle: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold)),
+                                  fontSize: 10, fontWeight: FontWeight.bold)),
                           child: Text(
                             "Sign Up",
                             style: new TextStyle(
-                              fontSize: 20.0,
+                              fontSize: 10.0,
                               fontWeight: FontWeight.bold,
                               color: Colors.cyan,
                               shadows: [
@@ -189,11 +189,11 @@ class _ScreenState extends State<Screen> {
                               padding: EdgeInsets.symmetric(
                                   horizontal: 50, vertical: 20),
                               textStyle: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold)),
+                                  fontSize: 10, fontWeight: FontWeight.bold)),
                           child: Text(
-                            "Go to Home Page",
+                            "Go to Home",
                             style: new TextStyle(
-                              fontSize: 20.0,
+                              fontSize: 10.0,
                               fontWeight: FontWeight.bold,
                               color: Colors.cyan,
                               shadows: [

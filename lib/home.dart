@@ -20,7 +20,14 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.pink.shade100,
-          title: Text('MyShopping'),
+          title: Text(
+            'SHOP MART',
+            style: TextStyle(
+              fontSize: 10.0,
+              fontWeight: FontWeight.bold,
+            ),
+            maxLines: 2,
+          ),
           actions: [
             Icon(Icons.search),
             Padding(

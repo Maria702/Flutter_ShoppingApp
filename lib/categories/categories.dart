@@ -33,12 +33,12 @@ class _CategoriesState extends State<Categories> {
                       "Electronics",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 35,
+                          fontSize: 20,
                           color: Colors.pink.shade600),
                     ),
                   ),
                   SizedBox(
-                    width: 20,
+                    width: 10,
                   ),
                   Container(
                     child: TextButton(
@@ -50,7 +50,7 @@ class _CategoriesState extends State<Categories> {
                           "See More",
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 30,
+                              fontSize: 5,
                               color: Colors.pink.shade600),
                         )),
                   ),
@@ -178,7 +178,12 @@ class _CategoriesState extends State<Categories> {
                                       child: Column(
                                         children: [
                                           IconButton(
-                                              onPressed: () {},
+                                              onPressed: () {
+                                                Navigator.of(context).push(
+                                                    MaterialPageRoute(
+                                                        builder: (context) =>
+                                                            ClothesScreen()));
+                                              },
                                               icon: Icon(Icons.shopping_cart,
                                                   color: Colors.white))
                                         ],
@@ -211,12 +216,12 @@ class _CategoriesState extends State<Categories> {
                         " Clothes ",
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 40,
+                            fontSize: 20,
                             color: Colors.pink.shade600),
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 10,
                     ),
                     Container(
                       child: TextButton(
@@ -228,7 +233,7 @@ class _CategoriesState extends State<Categories> {
                             "See More",
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 30,
+                                fontSize: 5,
                                 color: Colors.pink.shade600),
                           )),
                     ),
@@ -391,12 +396,12 @@ class _CategoriesState extends State<Categories> {
                         "Bags & Shoes",
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 35,
+                            fontSize: 20,
                             color: Colors.pink.shade600),
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 10,
                     ),
                     Container(
                       child: TextButton(
@@ -408,7 +413,7 @@ class _CategoriesState extends State<Categories> {
                             "See More",
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 20,
+                                fontSize: 5,
                                 color: Colors.pink.shade600),
                           )),
                     ),

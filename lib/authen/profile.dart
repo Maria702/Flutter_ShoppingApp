@@ -44,7 +44,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           context: context,
           builder: (BuildContext context) {
             return AlertDialog(
-              content: Text("LoggOut Successfully!"),
+              content: Text("LogOut Successfully!"),
             );
           });
     }

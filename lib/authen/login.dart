@@ -29,10 +29,8 @@ class _LoginState extends State<Login> {
       });
     }
 
-    final TextEditingController emailController =
-        TextEditingController(text: "mariya123@gmail.com");
-    final TextEditingController passwordController =
-        TextEditingController(text: "mariya123");
+    final TextEditingController emailController = TextEditingController();
+    final TextEditingController passwordController = TextEditingController();
 
     void login() async {
       Map<dynamic, dynamic> UserData = {};
@@ -121,7 +119,7 @@ class _LoginState extends State<Login> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsets.only(left: 40, right: 40, top: 10),
+                        const EdgeInsets.only(left: 40, right: 40, top: 20),
                     child: Column(
                       children: [
                         //**************EMAIL******************** */
