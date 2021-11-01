@@ -62,10 +62,7 @@ class Register extends StatelessWidget {
               gradient: LinearGradient(
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
-            colors: [
-              Colors.blue,
-              Colors.red,
-            ],
+            colors: [Colors.white70, Colors.grey.shade100],
           )),
           child: Padding(
             padding: const EdgeInsets.only(
@@ -74,12 +71,25 @@ class Register extends StatelessWidget {
             child: Center(
               child: Column(
                 children: [
+                  // ignore: prefer_const_constructors
                   Text(
                     'Create Account',
                     style: TextStyle(
-                      fontSize: 40.0,
+                      fontSize: 20.0,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: Colors.pink.shade900,
+                      shadows: [
+                        Shadow(
+                          blurRadius: 10.0,
+                          color: Colors.blue,
+                          offset: Offset(5.0, 5.0),
+                        ),
+                        Shadow(
+                          color: Colors.red,
+                          blurRadius: 10.0,
+                          offset: Offset(-5.0, 5.0),
+                        ),
+                      ],
                     ),
                   ),
                   Padding(

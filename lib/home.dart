@@ -6,7 +6,7 @@ import 'package:shopping_app/categories/cart.dart';
 import 'package:shopping_app/categories/categories.dart';
 import 'package:shopping_app/policy.dart';
 import 'package:shopping_app/categories/previousOrder.dart';
-import 'package:shopping_app/profile.dart';
+import 'package:shopping_app/authen/profile.dart';
 
 class HomePage extends StatefulWidget {
   @override

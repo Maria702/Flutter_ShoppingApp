@@ -27,21 +27,50 @@ class _ScreenState extends State<Screen> {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(10),
                 child: Container(
                   child: Center(
                     child: Column(
                       children: [
                         Container(
-                          child: Center(
-                              child: Text(
-                            "Welcome to Online Shopping",
-                            style: new TextStyle(
-                              fontSize: 30.0,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.cyan,
-                            ),
-                          )),
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 20),
+                            child: Center(
+                                child: Text(
+                              "***Welcome!***",
+                              style: new TextStyle(
+                                fontSize: 30.0,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.green.shade900,
+                                shadows: [
+                                  Shadow(
+                                    blurRadius: 10.0,
+                                    color: Colors.blue,
+                                    offset: Offset(5.0, 5.0),
+                                  ),
+                                  Shadow(
+                                    color: Colors.red,
+                                    blurRadius: 10.0,
+                                    offset: Offset(-5.0, 5.0),
+                                  ),
+                                ],
+                              ),
+                            )),
+                          ),
+                        ),
+                        Container(
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 10),
+                            child: Center(
+                                child: Text(
+                              "We knows your choice! Our personalised app uses artificial intelligence to help you find exactly what you are looking for.",
+                              style: new TextStyle(
+                                fontSize: 20.0,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black87,
+                              ),
+                            )),
+                          ),
                         )
                       ],
                     ),
@@ -192,8 +221,6 @@ class _ScreenState extends State<Screen> {
                   ),
                 ),
               ),
-              Container(),
-              Container(),
             ],
           ),
         ),

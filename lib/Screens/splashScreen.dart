@@ -3,7 +3,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:shopping_app/categories/Screens/screen.dart';
+
+import 'screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-        Duration(seconds: 3),
+        Duration(seconds: 10),
         () => Navigator.pushReplacement(
             context, MaterialPageRoute(builder: (context) => Screen())));
   }
@@ -27,32 +28,27 @@ class _SplashScreenState extends State<SplashScreen> {
         begin: Alignment.topRight,
         end: Alignment.bottomLeft,
         colors: [
-          Colors.purple.shade400,
-          Colors.pink.shade600,
+          Colors.white70,
+          Colors.white70,
         ],
       )),
-      child: Stack(
-        children: [
-          Center(
-            child: Container(
-              width: 250,
-              height: 250,
-              child: CircleAvatar(
-                radius: 80,
-                backgroundColor: Colors.blue,
+      child: Container(
+        child: Stack(
+          children: [
+            Center(
+              child: Container(
+                width: 250,
+                height: 250,
                 child: CircleAvatar(
-                    radius: 90,
-                    backgroundColor: Colors.yellow,
-                    child: CircleAvatar(
-                      radius: 80,
-                      backgroundImage: AssetImage(
-                        "assets/shopping.png",
-                      ),
-                    )),
+                  radius: 50,
+                  backgroundImage: AssetImage(
+                    "assets/shopLogo.jpg",
+                  ),
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

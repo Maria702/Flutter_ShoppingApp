@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -89,10 +89,7 @@ class _LoginState extends State<Login> {
               gradient: LinearGradient(
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
-            colors: [
-              Colors.lightBlue.shade400,
-              Colors.pink.shade600,
-            ],
+            colors: [Colors.white70, Colors.grey.shade100],
           )),
           child: Padding(
             padding: const EdgeInsets.only(
@@ -107,7 +104,19 @@ class _LoginState extends State<Login> {
                     style: TextStyle(
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: Colors.pink.shade900,
+                      shadows: [
+                        Shadow(
+                          blurRadius: 10.0,
+                          color: Colors.blue,
+                          offset: Offset(5.0, 5.0),
+                        ),
+                        Shadow(
+                          color: Colors.red,
+                          blurRadius: 10.0,
+                          offset: Offset(-5.0, 5.0),
+                        ),
+                      ],
                     ),
                   ),
                   Padding(
